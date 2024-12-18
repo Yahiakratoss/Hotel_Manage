@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.logiciel_h;
-
+import com.mycompany.logiciel_h.project.ConnectionProvider;
+import java.sql.Connection;
 /**
  *
  * @author Yahia
@@ -11,6 +12,15 @@ package com.mycompany.logiciel_h;
 public class LOGICIEL_H {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       
+         try (Connection con = ConnectionProvider.getCon()) {
+            if (con != null) {
+                System.out.println("Connexion réussie à MySQL !");
+            } else {
+                System.out.println("Échec de la connexion à MySQL !");
+            }
+        } catch (Exception e) {
+            System.err.println("Erreur : " + e.getMessage());
+        }
     }
 }

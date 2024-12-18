@@ -1,6 +1,14 @@
-com\mycompany\logiciel_h\signup.class
-com\mycompany\logiciel_h\signup$1.class
-com\mycompany\logiciel_h\signup$2.class
+com\mycompany\logiciel_h\project\tables.class
 com\mycompany\logiciel_h\signup$4.class
 com\mycompany\logiciel_h\signup$3.class
+com\mycompany\logiciel_h\signup.class
+com\mycompany\logiciel_h\signup$2.class
 com\mycompany\logiciel_h\LOGICIEL_H.class
+com\mycompany\logiciel_h\project\ConnectionProvider.class
+com\mycompany\logiciel_h\signup$1.class
+com\mycompany\logiciel_h\signup$7.class
+com\mycompany\logiciel_h\signup$6.class
+com\mycompany\logiciel_h\signup$8.class
+com\mycompany\logiciel_h\signup$5.class
+com\mycompany\logiciel_h\project\InsertUpdateDelete.class
+com\mycompany\logiciel_h\signup$9.class
