@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.logiciel_h;
+
 import javax.swing.JOptionPane;
 import com.mycompany.logiciel_h.project.InsertUpdateDelete;
 
@@ -114,6 +114,7 @@ public class signup extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(0, 102, 102));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Signup");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -123,6 +124,7 @@ public class signup extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(0, 102, 102));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Login");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -132,14 +134,20 @@ public class signup extends javax.swing.JFrame {
         });
 
         jButton4.setBackground(new java.awt.Color(0, 102, 102));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Forgot Password ?");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(39, 36, 47));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 2, 48)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Login");
+        jLabel8.setText("Signup");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -269,6 +277,10 @@ public class signup extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+         setVisible(false);
+
+    // Affiche la fenêtre Login
+    new Login().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -290,6 +302,14 @@ public class signup extends javax.swing.JFrame {
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+             setVisible(false);
+
+    // Affiche la fenêtre Login
+    new forgotPassword().setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
