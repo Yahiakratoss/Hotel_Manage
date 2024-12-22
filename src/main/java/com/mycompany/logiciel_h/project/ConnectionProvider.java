@@ -16,7 +16,7 @@ public class ConnectionProvider {
             // URL de connexion JDBC, utilisateur et mot de passe
             String url = "jdbc:mysql://localhost:3306/java"; // Remplacez "your_database" par le nom de votre base
             String user = "root"; // Remplacez par votre nom d'utilisateur MySQL
-            String password = "123456"; // Remplacez par votre mot de passe MySQL
+            String password = "root"; // Remplacez par votre mot de passe MySQL
             
             // Obtenir la connexion
             con = DriverManager.getConnection(url, user, password);
