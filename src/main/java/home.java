@@ -63,11 +63,21 @@ public class home extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(128, 117, 0));
         jButton3.setText("Customer Check out");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setBackground(new java.awt.Color(0, 26, 51));
         jButton4.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jButton4.setForeground(new java.awt.Color(128, 117, 0));
         jButton4.setText("Customer  Details Bill");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setBackground(new java.awt.Color(0, 26, 51));
         jButton5.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
@@ -153,6 +163,16 @@ public class home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new CustomerCheckIn().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:with checkout
+        new CustomerCheckOut().setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:details bill
+        new CustomerDetailsBill().setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
